@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="wprowadzenie.html">Wprowadzenie</a>
+      <a href="podstawy.html">Podstawy</a>
+      <a href="narzedzia.html">Narzędzia</a>
+      <a href="zlozoneobrazy.html">Złożone obrazy</a>
+      <a href="filtry.html">Filtry</a>
+      <a href="zaawansowane.html">Zaawansowane</a>
+      <a href="zasieg.html">Zasięg</a>
+      <a href="proxy.html">Proxy</a>
+      <a href="inne.html">Inne</a>
+      <a href="rendering.html">Rendering</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    <div class="doc">
+      <h1 class="text-center">RENDERING</h1>
+      <div class="container">
+          <h2>Responsive Table</h2>
+  <p>The .table-responsive class creates a responsive table which will scroll horizontally on screens that are less than 992px wide (if needed). When viewing on anything larger than 992px, there is no difference:</p>                                                                                      
+  <h3>Widgety</h3>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Typ</th>
+          <th>Nazwa</th>
+          <th>Opis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>FOLDER</td>
+          <td>SELECT BUTTON</td>
+          <td>Wybierz folder, w którym chcesz umieścić plik wyjściowy.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>NAME</td>
+          <td>ENTRY WIDGET</td>
+          <td>Ustaw nazwę pliku wyjściowego.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>TYPE</td>
+          <td>DROP DOWN MENU</td>
+          <td>Wybierz między renderowaniem z parametrem zdefiniowanym przez użytkownika lub użyj gotowych parametrów wyświetlania i typów plików.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>PRESETS</td>
+          <td>DROP DOWN MENU</td>
+          <td>Wybierz wstępnie ustawione parametry renderowania i typ pliku.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>USE PROJECT PROFILE</td>
+          <td>CHECK BOX</td>
+          <td>Odznacz, aby wybrać inny, niż profil projektu, który będzie używany do renderowania wideo.</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>PROFILE</td>
+          <td>DROP DOWN MENU</td>
+          <td>Wybierz profil projektu do renderowania</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>FOLDER</td>
+          <td>SELECT BUTTON</td>
+          <td>Wybierz kodowanie i format kontenera do renderowania.</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>ENCODING / FILE TYPE </td>
+          <td>DROP DOWN MENU</td>
+          <td>Wybierz kodowanie i format kontenera do renderowania.</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>BITRATE</td>
+          <td>DROP DOWN MENU</td>
+          <td>Wybierz bitrate do renderowania.</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>RENDER USING ARGS</td>
+          <td>CHECK BOX</td>
+          <td>Renderowanie za pomocą argumentów ustawionych w polu edycji tekstu poniżej.</td>
+        </tr>
+         <tr>
+          <td>11</td>
+          <td>ARGS</td>
+          <td>TEXT AREA</td>
+          <td>Ustaw argumenty do renderowania.</td>
+        </tr>
+         <tr>
+          <td>12</td>
+          <td>LOAD SELECTION</td>
+          <td>BUTTON</td>
+          <td>Załaduj parametry renderowania zdefiniowane w lewym panelu do pola tekstowego args.</td>
+        </tr>
+         <tr>
+          <td>13</td>
+          <td>EXT</td>
+          <td>ENTRY WIDGET DROP DOWN MENU</td>
+          <td>Ustaw rozszerzenie pliku dla renderowanego pliku args.</td>
+        </tr>
+         <tr>
+          <td>14</td>
+          <td>OPEN FILE IN BIN</td>
+          <td>CHECK BOX</td>
+          <td>Otwórz plik rendererd jako element multimedialny w bieżącym pojemniku.</td>
+        </tr>
+         <tr>
+          <td>15</td>
+          <td>RENDER RANGE</td>
+          <td>DROP DOWN MENU</td>
+          <td>Wybierz pomiędzy rozłączaniem całego programu lub zaznaczonym zakresem.</td>
+        </tr>
+         <tr>
+          <td>16</td>
+          <td>RENDER</td>
+          <td>BUTTON</td>
+          <td>Renderuje oś czasu do pliku.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+        <h3>WYDAJNOŚĆ RENDEROWANIA</h3>
+Naciśnij przycisk Renderuj, aby rozpocząć renderowanie.
+Zostanie otwarte okno renderowania wyświetlające informacje o ścieżce pliku renderowania, szacowanym czasie pozostałym, czasie renderowania i widżecie paska postępu.
+Po zakończeniu renderowania okno Renderowanie zamknie się automatycznie.
+<h3>KOLEJKA RENDEROWANIA WSADOWEGO</h3>
+Flowblade oferuje dedykowaną aplikację kolejki Render Bender. Kolejka Renderowania wsadowego to osobna aplikacja do Flowblade i działa na różnych procesach, więc możliwe jest zamknięcie Flowblade bez wpływu na bieżące renderowanie.
+
+Kolejka renderowania to trwała struktura danych elementów renderowania na dysku. Każdy element składa się z pliku projektu i zapisanych parametrów wyświetlania. Użytkownicy mogą dodawać elementy renderowania do kolejki renderowania, a następnie renderować całą kolejkę bez wprowadzania dalszych danych przez użytkownika.
+
+<h5>DODAWANIE POZYCJI DO KOLEJKI RENDEROWANIE WSADOWE</h5>
+Naciśnij przycisk Do kolejki na karcie Renderowanie .
+Wybierz opcję Renderuj-> Dodaj do kolejki Renderowanie wsadowe ... z menu
+<h5>KORZYSTANIE Z KOLEJKI RENDEROWANIE WSADOWE</h5>
+Otwórz aplikację kolejki renderowania wsadowego, wybierając z menu polecenie Renderuj -> Kolejka Renderowania wsadowego .
+Naciśnij przycisk Przeładuj kolejkę , aby wyświetlić elementy renderowania, które zostały dodane do kolejki renderowania od momentu jej otwarcia.
+Użyj przycisku Usuń wybrane i Usuń zakończone, aby usunąć elementy z kolejki.
+Użyj widgetu checkbox w kolumnie Render, aby wybrać elementy, które mają być renderowane.
+Naciśnij przycisk Renderuj , aby rozpocząć renderowanie.
+Działania interfejsu użytkownika:
+
+Prawy przycisk myszy, aby wyświetlić element menu kontekstowego elementu renderowanego.
+Zapisz projekt elementu Jako ... pozwala użytkownikowi zapisać plik projektu elementu renderowania w tej samej innej lokalizacji
+Właściwości renderowania wyświetlają właściwości renderowania, które zostały ustawione, gdy element został dodany do kolejki renderowania.
+Usuń usuwa element z kolejki
+<h5>RENDEROWANIE ZA KULISAMI: MLT I LIBAVFORMAT (FFMPEG)</h5>
+Flowblade Movie Editor to aplikacja Pythona współpracująca z wielościeżkowym środowiskiem multimedialnym MLT. Inne aplikacje do edycji wideo oparte na MLT to OpenShot i Kdenlive.
+
+MLT używa biblioteki libavformat (FFMpeg) do renderowania plików wyjściowych, a renderowanie jest definiowane przez ustawienie parametrów kodowania FFMpeg. Te parametry są dostarczane z Flowblade Movie Editor do MLT, tworząc obiekt "konsumenta" dla danego profilu Render, a następnie ustawiając jego Rendering Args. Te ostatnie argumenty są dokładnie takie same, które są używane podczas używania FFmpeg do kodowania plików wideo.
+
+Renderowanie argumentów do kodowania różnych typów plików wideo jest wstępnie pakowane i można je wybierać za pomocą menu rozwijanych Formatowanie i Format oraz Jakość. Argumenty można udoskonalić, zaznaczając Renderuj z args Checkbox i zmieniając wartości args i / lub dodając / usuwając args.
+
+Każdy rodzaj plików wideo obsługiwanych przez zainstalowaną wersję MLT można zakodować, tworząc zdefiniowany przez użytkownika profil renderowania i ustawiając jego Rendering Args. Google do kodowania FFMpeg, aby znaleźć kombinacje Arg dla różnych plików wideo.
+
+Wyszukaj w Internecie informacje o kodowaniu plików za pomocą FFMpeg, aby uzyskać przykłady Rendering Args, które mogą być użyte.
+      
+        <h3>FLOWBLADE RENDERING PIPELINE</h3>
+        
+        <img class="img-fluid" src="images/8.png">
+      </div>
+    </div>
+        <div class="footer">
+  <p>Flowblade</p>
+</div>
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    
+  </body>
+</html>

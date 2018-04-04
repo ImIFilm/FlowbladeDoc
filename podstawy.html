@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="wprowadzenie.html">Wprowadzenie</a>
+      <a href="podstawy.html">Podstawy</a>
+      <a href="narzedzia.html">Narzędzia</a>
+      <a href="zlozoneobrazy.html">Złożone obrazy</a>
+      <a href="filtry.html">Filtry</a>
+      <a href="zaawansowane.html">Zaawansowane</a>
+      <a href="zasieg.html">Zasięg</a>
+      <a href="proxy.html">Proxy</a>
+      <a href="inne.html">Inne</a>
+      <a href="rendering.html">Rendering</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    <div class="doc">
+      <h1 class="text-center">Podstawy</h1>
+      <div class="container">
+        <h3>TWORZENIE NOWEGO PROJEKTU</h3>
+<p>Flowblade Movie Editor zapisuje pracę w plikach projektu.<br />
+
+<b>Aby utworzyć nowy projekt:</b><br />
+  
+  Menu: Wybierz <kbd>Plik -> Nowy z menu</kbd>.<br />
+  Skrót klawiszowy: Naciśnij <kbd>Ctrl + N</kbd> .<br />
+Projekt zawiera:<br />
+
+jedna lub więcej sekwencji edytowanych mediów<br />
+zbiór plików multimedialnych przechowywanych w pojemnikach.<br />
+Istnieją dwa parametry, które można wybrać dla nowego projektu:<br />
+
+Profil projektu Profil projektu określa liczbę klatek na sekundę, rozmiar obrazu w pikselach i proporcje pikseli.<br />
+Liczba utworów Wybierz liczbę ścieżek wideo i audio użytych w projekcie. Można to zmienić później, ale operacja niszczy stos Cofnij / Ponów i wszystkie Klipy osi czasu, które nie pasują do nowo utworzonej wersji Sekwencji.<br />
+Materiał wideo jest wewnętrznie skalowany do wymiarów profilu, dlatego wybiera Profil projektu o mniejszych wymiarach pikseli niż renderowane wyjście prowadzi do obniżenia jakości.<br />
+Flowblade Movie Editor wewnętrznie obsługuje dane obrazu jako ramki YUV420, więc kodowanie powiązane z danym profilem nie ma wpływu na jakość przed renderowaniem.
+Dla możliwie najlepszej jakości materiału wejściowego, profilu projektu i renderowania Profil powinien mieć te same wymiary pikseli i proporcje pikseli.<br /></p>
+ <h3> DODAWANIE I USUWANIE NOWYCH SEKWENCJI</h3>
+<p>Projekt zawiera jedną lub więcej Sekwencji. Termin Sekwencja odnosi się do pełnej zawartości osi czasu tworzącej program, film.<br />
+
+W przypadku złożonych projektów czasami najlepiej jest używać wielu sekwencji do tworzenia różnych części gotowego produktu i zarządzania nimi.<br />
+
+Użyj przycisków <kbd>Dodaj</kbd> i <kbd>Usuń</kbd> w zakładce Projekt panel Sekwencje . Wszystkie sekwencje używają tego samego profilu.<br />
+
+Tworząc nową sekwencję, możesz wybrać liczbę ścieżek w sekwencji. Można to zmienić później, ale operacja niszczy stos Cofnij / Ponów i wszystkie Klipy osi czasu, które nie pasują do nowo utworzonej wersji Sekwencji.<br />
+        </p>
+      <h3>  PRACA Z PLIKAMI MULTIMEDIALNYMI</h3>
+<p>Flowblade Movie Editor przechowuje pliki na karcie Media . Pliki znajdują się w nienazwanej tabeli, która wyświetla zawartość aktualnie wybranego pojemnika. Pojemniki są wymienione w tabeli Bins .<br />
+
+Otwieranie plików multimedialnych:<br />
+
+  Naciśnij przycisk <kbd>Dodaj</kbd> nad nienazwaną tabelą zawartości pojemnika na karcie Media .
+Użyj okna dialogowego, aby znaleźć i wybrać pliki.<br />
+Pliki są wyświetlane jako miniatury.<br />
+  Zauważ, że tworzenie miniatur otwieranych plików zajmie trochę czasu.<br /><br /></p>
+<div class="jumbotron"><h3>MEDIA PROJEKTU: ŚCIEŻKI BEZWZGLĘDNE I WZGLĘDNE</h3>
+<p>Flowblade zapisuje odwołania do plików multimedialnych używanych w projekcie jako ścieżki bezwzględne .<br />
+Jeśli nośnik nie zostanie znaleziony podczas ładowania , Flowblade spróbuje znaleźć plik multimedialny o tej samej nazwie w podfolderach względem pliku projektu.<br />
+Jeśli wszystkie media używane przez projekt są zapisywane w podfolderach w odniesieniu do pliku projektu, plik projektu i nośnik można przenieść jako jednostkę, a projekt zostanie pomyślnie załadowany po skopiowaniu danych do innego miejsca
+Renderowane pliki, takie jak przejścia, są domyślnie zapisywane w ukrytym folderze /.flowblade/rendered_clips/.<br />
+Element menu Plik-> Zapisz kopię zapasową migawki ... zapisuje plik projektu, wszystkie pliki multimedialne i wyrenderowane w jednym folderze, który można zapisać jako jednostkę, a projekt można zawsze załadować za pomocą tych danych
+Kolejność ładunków pomiędzy ścieżkami bezwzględnymi i względnymi można ustawić w oknie preferencji<br /></p>
+Do naprawienia problemów, które mogą wystąpić, można użyć narzędzia Media Relinker<br /><br />
+  <b>UWAGA:</b> podane tutaj informacje dotyczą tylko wersji 0.18 i wyższych.</div>
+       
+        <h3>PRACA Z POJEMNIKAMI</h3>
+W edycji wideo pojemnik jest miejscem do przechowywania mediów. Termin używany jest w Avid i był wcześniej używany przez redaktorów filmowych.<br />
+
+W przypadku małych projektów zwykle używanie skrzynek nie jest konieczne i można ukryć panel Skrzynka, przeciągając uchwyt między panelami.<br /><br />
+
+        <div class="alert alert-info"><b>Dodawanie kosza :</b> Naciśnij przycisk Dodaj powyżej tabeli Bins.<br /> </div>
+
+Usuwanie pojemnika : Naciśnij przycisk Usuń nad tabelą Pojemniki. Przed usunięciem kosz musi być pusty. Projekt musi zawsze mieć co najmniej jeden pojemnik.<br />
+
+Zmiana nazwy pojemnika : kliknij dwukrotnie nazwę pojemnika.<br />
+
+Przenoszenie plików do innego odbiornika : przeciągnij pliki na wierzch ikony kosza.<br /><br />
+<h3>KORZYSTANIE Z OSI CZASU</h3>
+        <div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        <p> PRZEWIJANIE OŚ CZASU</p>
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body">
+        Naciśnij i przeciągnij pasek przewijania poniżej osi czasu
+Przewiń klawisz Middle Mouse + klawisz CTRL , gdy znajdziesz się na Osi czasu
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        <p>POWIĘKSZANIE OSI CZASU</p>
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Kliknij przyciski Powiększ , Pomniejsz lub Powiększ długość .<br /><br />
+Przewiń przycisk myszy środkowej na osi czasu
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+        <p>ZMIANA BIEŻĄCEJ RAMKI</p>
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Przeciągnij prawym przyciskiem myszy , zaczynając od pustego miejsca na Osi czasu.<br />
+Przeciągnij lewym przyciskiem myszy na skali ramki.<br />
+Przeciągnij lewą myszą na pasku pozycji monitora.<br />
+Kliknij przycisk Strzałka w lewo lub przycisk Strzałka w prawo , aby przejść do następnej lub poprzedniej klatki.<br />
+Kliknij Strzałka w górę lub Strzałka w dół , aby przejść do następnego lub poprzedniego cięcia na najwyższej aktywnej ścieżce.<br />
+        Kliknij przycisk <kbd>Dalej</kbd> lub przycisk <kbd>Poprzedni</kbd> w obszarze Przyciski monitora, aby przejść do następnej lub poprzedniej klatki.<br />
+      </div>
+    </div>
+  </div>
+          
+          <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+        <p>ZMIANA BIEŻĄCEJ KLATKI, GDY KLIP JEST WYŚWIETLANY NA MONITORZE</p>
+      </a>
+    </div>
+    <div id="collapseFour" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Przeciągnij prawym przyciskiem myszy , zaczynając od pustego miejsca na Osi czasu.<br />
+Przeciągnij lewym przyciskiem myszy na skali ramki.<br />
+Przeciągnij lewą myszą na pasku pozycji monitora.<br />
+Kliknij przycisk Strzałka w lewo lub przycisk Strzałka w prawo , aby przejść do następnej lub poprzedniej klatki.<br />
+Kliknij Strzałka w górę lub Strzałka w dół , aby przejść do następnego lub poprzedniego cięcia na najwyższej aktywnej ścieżce.<br />
+        Kliknij przycisk <kbd>Dalej</kbd> lub przycisk <kbd>Poprzedni</kbd> w obszarze Przyciski monitora, aby przejść do następnej lub poprzedniej klatki.<br />
+      </div>
+    </div>
+  </div>
+          <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+        <p>PRZEŁĄCZANIE MIĘDZY OSIĄ CZASU A WYŚWIETLANIEM KLIPU</p>
+      </a>
+    </div>
+    <div id="collapseFive" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Klikaj przyciski z ikonami reprezentującymi sekwencję lub pojedynczy klip w obszarze Przyciski monitora.<br />
+Przeciągnij plik multimedialny na monitor, aby wyświetlić klip.<br />
+      </div>
+    </div>
+  </div>
+          
+                    <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+        <p>USTAWIANIE AKTYWNYCH ŚCIEŻEK</p>
+      </a>
+    </div>
+    <div id="collapseSix" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Kliknij opcję Śledź aktywny przełącznik po prawej stronie obszaru Kolumna ścieżek. Najwyższy Track Aktywny Przełącznik wyświetla strzałkę skierowaną w dół, wskazując, że Wstaw z Monitora i inne przyciski umieszczają klipy na tej ścieżce.
+      </div>
+    </div>
+  </div>
+</div>
+        <br />
+
+<h4>EFEKTY DZIAŁANIA ŚLADU AKTYWNEGO</h4>
+Cięcia są wykonywane tylko na aktywnych ścieżkach.
+Wstawianie pliku medialnego, który jest aktualnie wyświetlany w Monitorze za pomocą funkcji Wstaw z monitora, Dołącz z monitora lub Trzypunktowe przyciski Ovewrite umieszcza klip na najbardziej aktywnej ścieżce wskazanej przez ikonę strzałki.
+<h4>WYBÓR POJEDYNCZEGO KLIPU</h4>
+Kliknij klip lewym przyciskiem myszy.
+<h4>WYBÓR WIELU KLIPÓW NA TEJ SAMEJ ŚCIEŻCE</h4>
+Kliknij klip lewym przyciskiem myszy .
+Kliknij inny klip na tej samej ścieżce za pomocą przycisku Control + Left Mouse .
+Zostaną wybrane wszystkie klipy pomiędzy klikniętymi klipami.
+<h4>ODZNACZ WSZYSTKIE KLIPY</h4>
+Kliknij tło obszaru osi czasu.
+<h4>DODAWANIE KLIPÓW DO SEKWENCJI</h4>
+<div class="alert alert-info"><b>DRAG'N'DROP</b>
+  Naciśnij kartę Media File na Media i przeciągnij ją na ścieżkę, na której chcesz ją umieścić.<br /></div>
+Opcja "Zastąp puste" jest wybrana jako preferencja dla działania przeciągnij i upuść:
+Na ścieżce klip V1 zostanie wstawiony na ścieżce przy najbliższym przycięciu.
+Na torach innych niż V1 :.<br />
+Klip zostanie wstawiony, jeśli zostanie upuszczony na klip.<br />
+Clip zastąpi dostępne puste i puste miejsce i wykona wstawienie dla długości ramek, które zostaną nadpisane.<br />
+Opcja "Zawsze wstawiaj" jest wybierana jako preferowana akcja "przeciągnij i upuść":
+Klip zostanie wstawiony na ścieżce przy najbliższym cięciu.<br />
+<h4>Z MONITORA</h4>
+Otwórz klip w Monitorze za pomocą:<br />
+dwukrotne kliknięcie ikony miniatury,<br />
+przeciąganie pliku multimedialnego na monitor lub
+wybranie pozycji Otwórz w programie Clip Monitor z menu kontekstowego Right Mouse .
+Wybierz zakres insertów<br />
+Użyj przycisków Mark In i Mark Out, aby wybrać zakres.<br />
+Użyj przycisków I i O , aby ustawić zakres.<br />
+Jeśli zakres nie zostanie ustawiony, zostanie wstawiona pełna długość klipu.
+Naciśnij przycisk Wstaw z monitora<br />
+Klip zostanie wstawiony na pierwszej aktywnej ścieżce w punkcie cięcia najbliższym aktualnie wyświetlanej klatki. Pierwsza aktywna ścieżka jest oznaczona strzałką w dół na ścieżce Aktywny przełącznik.<br />
+<h4>EDYTOWANIE KLIPÓW NA OSI CZASU</h4>
+Po umieszczeniu klipów na osi czasu w celu utworzenia sekwencji, prawdopodobnie trzeba będzie zawęzić cięcia między klipami.
+
+<h4>PRZYCINANIE KLIPÓW</h4>
+Zastosowanie trymowania Narzędzie , Rolka narzędziowa lub Slip Narzędzie
+
+<h4>RZENOSZENIE KLIPÓW</h4>
+Zastosowanie płytki narzędzia , nadpisywania Narzędzie lub Spacer Narzędzie
+
+<h4>CIĘCIE KLIPÓW</h4>
+Wybierz wyciętą ramkę
+Cięcie jest zawsze wykonywane przed aktualnie wyświetlaną ramką na wszystkich aktywnych ścieżkach.
+Wytnij klip
+Naciśnij przycisk Cut lub naciśnij X na klawiaturze.
+<h4>USUWANIE KLIPÓW</h4>
+<p>Splice Out : Wybierz klip (y) i naciśnij klawisz Delete lub użyj przycisku Splice Out na środkowym pasku. Wszystkie klipy na ścieżce po usuniętym klipie są przesuwane w lewo, aby zakryć utworzone puste miejsce. Niektóre edytory nazywają tę operację Ripple Delete .<br />
+
+Podnieś : wybierz klip (y) i naciśnij przycisk Podnoszenia na środkowym pasku. Klip zostanie zastąpiony pustym miejscem, jeśli znajduje się w środku ścieżki. Pozostałe klipy na ścieżce nie są przenoszone.<br />
+
+Usuwanie okładki / przejścia przejścia : Wybierz pojedynczy wytopiony klip przejściowy i naciśnij klawisz lub klawisz Delete . Jeśli klipy przed i po usuniętym klipie mają dostępne klatki, to przestrzeń pozostawiona przez usunięty klip zostanie pokryta materiałem z sąsiednich klipów. Jeśli materiał nie jest dostępny, zostanie wykonane spleszczenie. Preferowane jest zawsze wykonywanie splotów na zanikach i przejściach.<br /><br /></p>
+
+        <div class="alert alert-info"><b>Użyj skrótów klawiaturowych!</b> Znacznie szybciej jest użyć klawisza X do wycinania klipów i klawisza Delete , aby rozdzielić klipy, niż używać przycisków do tych samych operacji.<br /></div>
+        <h3>RENDEROWANIE FILMU</h3><br />
+<h4>WYBÓR PARAMETRÓW</h4>
+<p>Przycisk wyboru pliku folderów wybiera folder, aby umieścić wyrenderowany plik.
+Widżet wpisu nazwy umożliwia określenie nazwy pliku wyjściowego.
+Użyj formatu kodowania i menu rozwijanego bez tytułu Jakość make, aby wybrać typ pliku do wyrenderowania.</p>
+<h4>WYDAJNOŚĆ RENDEROWANIA</h4>
+<p>Naciśnij przycisk Renderuj, aby rozpocząć renderowanie.
+Zostanie otwarte okno renderowania wyświetlające informacje o ścieżce pliku renderowania, szacowanym czasie pozostałym, czasie renderowania i widżecie paska postępu.<br/>
+  Po zakończeniu renderowania okno Renderowanie zamknie się automatycznie. </p>
+      </div>
+        <div class="footer">
+  <p>Flowblade</p>
+</div>
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    
+  </body>
+</html>

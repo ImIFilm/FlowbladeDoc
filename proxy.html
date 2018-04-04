@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="wprowadzenie.html">Wprowadzenie</a>
+      <a href="podstawy.html">Podstawy</a>
+      <a href="narzedzia.html">Narzędzia</a>
+      <a href="zlozoneobrazy.html">Złożone obrazy</a>
+      <a href="filtry.html">Filtry</a>
+      <a href="zaawansowane.html">Zaawansowane</a>
+      <a href="zasieg.html">Zasięg</a>
+      <a href="proxy.html">Proxy</a>
+      <a href="inne.html">Inne</a>
+      <a href="rendering.html">Rendering</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    <div class="doc">
+      <h1 class="text-center">ZASIĘG</h1>
+      <div class="container">
+<h3>UZASADNIENIE</h3>
+      <i class="fas fa-exchange-alt"></i>
+Klipy proxy używane podczas edycji proxy mają zazwyczaj mniejszą szybkość transmisji danych i mniej intensywne dekodowanie procesora. Istnieją dwa główne powody używania edycji proxy:
+<br>
+Oryginalne nośniki, z których program jest edytowany, powodują zbyt wysokie zapotrzebowanie na przepustowość dysku lub moc przetwarzania procesora w celu dekodowania, aby umożliwić elastyczną edycję<br>
+Oryginał przechowywany jest na serwerze sieciowym, wolnym dysku zewnętrznym lub innym nośniku z ograniczonym dostępem i nie umożliwia szybkiej edycji w przypadku bezpośredniego dostępu.<br>
+<h3>OGÓLNY OBIEG PRACY DLA PROXY</h3>
+Wszystkie <b>przepływy pracy</b> przy edycji proxy mają te same fazy:<br><br>
+
+<li>Renderuj media proxy z oryginalnych nośników</li><br>
+<li>Zamień oryginalne nośniki na media proxy</li><br>
+<li>Edytuj za pomocą mediów proxy</li><br>
+<li>Zamień nośnik proxy na oryginalny nośnik</li><br>
+<li>Renderuj końcowy program przy użyciu oryginalnych nośników</li><br>
+<h3>EDYCJA PROXY PROXY FLOWBLADE</h3>
+Tworzenie <kbd>Proxy Media</kbd><br>
+Wybierz Project-> Proxy Manager w menu i ustaw ustawienia plików proxy w obszarze <kbd>Kodowanie Proxy</kbd><br>
+Wybierz pliki wideo mediów w panelu <kbd>Media</kbd><br>
+Naciśnij przycisk z ikoną pliku proxy następnie przycisk Usuń w panelu <kbd>Media</kbd>
+Jeśli projekt jest już w trybie proxy "Korzystanie z proxy proxy" , klipy na osi czasu z oryginalnymi nośnikami, na których były wyświetlane media proxy, zostaną natychmiast zastąpione przez media proxy<br>
+Konwertowanie na nośnik proxy<br>
+Wybierz <kbd>Project-> Proxy Manager</kbd>, aby otworzyć Proxy Manager<br>
+Naciśnij przycisk Użyj media proxy<br>
+Edytowanie za pomocą mediów proxy<br>
+Klipy korzystające z mediów proxy mają niebieski pasek wskazujący ten status
+Ikona wskaźnika edycji proxy jest wyświetlana w lewym dolnym rogu<br>
+Jeśli nowe nośniki proxy zostaną renderowane, klipy osi czasu z użyciem oryginalnego nośnika zostaną natychmiast zastąpione nośnikami proxy<br>
+Projekt można zapisać normalnie i przekonwertować po załadowaniu, aby użyć oryginalnych nośników<br>
+Konwertowanie na oryginalne Media<br>
+Wybierz <kbd>Project-> Proxy Manager</kbd>, aby otworzyć Proxy Manager<br>
+Naciśnij przycisk Użyj oryginalnego nośnika<br><br>
+<div class="jumbotron">
+        <b>WAŻNE UWAGI DOTYCZĄCE EDYCJI PROXY PROXY FLOWBLADE</b><br>
+<i class="fas fa-hand-point-right"></i>ZNISZCZENIE JAKICHKOLWIEK MEDIÓW <br>podczas redagowania proxy ODPOWIADA PRZETWARZANIU POWRÓT DO KORZYSTANIA Z ORYGINALNYCH MEDIÓW<br>
+<i class="fas fa-hand-point-right"></i>Możliwe jest tylko użycie wszystkich istniejących mediów proxy i klipów lub wszystkich oryginalnych nośników . Nie można używać tylko niektórych utworzonych mediów proxy.</div><br>
+        
+<div class="alert alert-info"><b>Flowblade</b> wykorzystuje technologię programistyczną, która zmienia ścieżki używane przez elementy multimedialne i klipy, aby wskazywać na ukryte media proxy lub oryginalne media.<br></div>
+
+        <div class="alert alert-primary">Przejście z jednego na drugie jest realizowane poprzez <b>zapisanie ukrytego tymczasowego pliku projektu</b> na dysku i zastąpienie ścieżek po odczytywaniu projektu. Z tego powodu brakujące oryginalne nośniki powodują, że konwersja powraca do użycia oryginalnego nośnika. </div>
+      </div>
+    </div>
+        <div class="footer">
+  <p>Flowblade</p>
+</div>
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    
+  </body>
+</html>

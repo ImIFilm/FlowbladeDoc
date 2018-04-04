@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="wprowadzenie.html">Wprowadzenie</a>
+      <a href="podstawy.html">Podstawy</a>
+      <a href="narzedzia.html">Narzędzia</a>
+      <a href="zlozoneobrazy.html">Złożone obrazy</a>
+      <a href="filtry.html">Filtry</a>
+      <a href="zaawansowane.html">Zaawansowane</a>
+      <a href="zasieg.html">Zasięg</a>
+      <a href="proxy.html">Proxy</a>
+      <a href="inne.html">Inne</a>
+      <a href="rendering.html">Rendering</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    <div class="doc">
+      <h1 class="text-center">INNE</h1>
+      <div class="container">
+<h3>TYTUŁY</h3>
+Cechy:<br>
+
+<i class="far fa-times-circle"></i> Dodaj i usuń warstwy w obszarze Warstwy<br>
+<i class="far fa-times-circle"></i> Edytuj właściwości warstwy i tekst w obszarze Aktywna warstwa<br>
+<i class="far fa-times-circle"></i> Ustaw pozycję tekstu, przeciągając aktywną warstwę w edytorze widoku<br>
+<i class="far fa-times-circle"></i> Ustaw obraz tła z Osi czasu, aby odpowiednio ułożyć tekst, przeciągając wskaźnik ramki na pasku pozycji<br>
+<i class="far fa-times-circle"></i> Ładuj i zapisuj dane warstw w obszarze warstw<br>
+
+        
+<h3>MIKSER AUDIO</h3>
+Cechy:<br>
+
+<i class="far fa-times-circle"></i> Monitoruj poziomy dźwięku na miernikach VU podczas odtwarzania<br>
+<i class="far fa-times-circle"></i> Użyj suwaków, aby ustawić głośność dla utworów lub Master Out<br>
+<i class="far fa-times-circle"></i> Kliknij przycisk Pan , aby aktywować suwak pannig i użyć go do przesuwania dźwięku<br>
+
+        
+        <h3>MEDIA RELINKER</h3>
+Media Relinker to autonomiczna aplikacja działająca we własnym procesie i nie wpływająca na projekt otwarty w Flowblade<br>
+
+Rozpocznij, naciskając przycisk <kbd>Załaduj projekt</kbd> do ponownego łączenia i wybierz projekt, który chcesz ponownie połączyć.<br>
+Wybierz plik multimedialny, który chcesz zastąpić innym plikiem multimedialnym. Naciśnij przycisk Ustaw ścieżkę ponownego łączenia plików lub naciśnij prawy przycisk myszy, aby rozpocząć wybieranie nowego pliku. Klipy i chusteczki w projekcie są powiązane z tym nowym plikiem multimedialnym.<br>
+Użyj menu rozwijanego w lewym dolnym rogu, aby wyświetlić brakujące lub znalezione pliki multimedialne<br>
+Naciśnij przycisk <kbd>Zapisz ponownie projekt jako ... </kbd>, aby zapisać relinkowaną wersję projektu<br>
+Otwórz ponownie powiązany projekt w Flowblade i kontynuuj pracę z nim
+Media Relinker działa we własnym procesie i nie współdzieli stanu ani danych z uruchomioną aplikacją.<br>
+Podczas ponownego łączenia projektu otwartego w Flowblade w tym samym czasie upewnij się, że nie zastępujesz ponownie połączonej wersji projektu podczas zapisywania otwartego projektu w Flowblade<br>
+        
+        
+        <h3>EFEKTY G'MIC</h3>
+G'MIC to w pełni funkcjonalny framework open-source do przetwarzania obrazu.
+
+Narzędzie Flowblade G'MIC przedstawia użytkownikowi zbiór komunikatów, które można wykorzystać do osiągnięcia złożonego filtrowania klipów wideo.
+
+UWAGA: Jeśli w systemie nie ma polecenia, odpowiedni wybór filtrowania nie zadziała.
+
+Polecenia są w większości osadzone w samym pliku / usr / bin / gmic , więc aby uzyskać dostęp do większej liczby poleceń, będziesz potrzebować większego pakietu binarnego w swoim systemie.
+
+Możliwe jest jednak dodawanie i używanie niestandardowych poleceń i używanie ich do filtrowania wideo, więcej informacji <a href="http://gmic.eu/reference.shtml#section11">tutaj</a>.
+        
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          <p>ŁADOWANIE KLIPU I WYŚWIETLANIE PODGLĄDU</p>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <i class="far fa-circle"></i> Rozpocznij, naciskając przycisk Wczytaj klip i wybierz klip wideo, w którym chcesz zastosować filtrowanie.<br>
+<i class="far fa-circle"></i> Naciśnij trójkąt skierowany w dół na obszar edycji skryptu w lewym środku okna, aby wybrać polecenie gmic.<br>
+<i class="far fa-circle"></i> Możesz zmienić wartości nadane komendom w obszarze edycji skryptu .<br>
+<i class="far fa-circle"></i> Naciśnij przycisk podglądu po prawej stronie, aby wyświetlić przefiltrowany obraz.<br>
+Po wyświetleniu podglądu obszaru poniżej obszaru edycji skryptu wyświetlany jest tekst wyjściowy z gmic z możliwymi komunikatami o błędach.<br>
+<i class="far fa-circle"></i> Możesz zastosować wiele poleceń, zaznaczając pole wyboru Dodaj do skryptu .<br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        <p>RENDEROWANIE WYJŚCIOWE</p>
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <i class="far fa-circle"></i> Aby wyrenderować sekwencję klatek, musisz ustawić Mark In i Mark out points i wybrać folder do przechowywania renderowanej sekwencji klatek.<br>
+<i class="far fa-circle"></i> Aby wyrenderować plik wideo z przefiltrowanej sekwencji klatek, zaznacz pole wyboru Zakoduj wideo i naciśnij przycisk Ustawienia kodowania , aby ustawić właściwości renderowanego pliku wideo.<br>
+        </div>
+      </div>
+    </div>
+  </div> 
+        
+        
+      </div>
+    </div>
+        <div class="footer">
+  <p>Flowblade</p>
+</div>
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    
+  </body>
+</html>

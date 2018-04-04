@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="wprowadzenie.html">Wprowadzenie</a>
+      <a href="podstawy.html">Podstawy</a>
+      <a href="narzedzia.html">Narzędzia</a>
+      <a href="zlozoneobrazy.html">Złożone obrazy</a>
+      <a href="filtry.html">Filtry</a>
+      <a href="zaawansowane.html">Zaawansowane</a>
+      <a href="zasieg.html">Zasięg</a>
+      <a href="proxy.html">Proxy</a>
+      <a href="inne.html">Inne</a>
+      <a href="rendering.html">Rendering</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    <div class="doc">
+      <h1 class="text-center">ZAAWANSOWANE</h1>
+      <div class="container">
+<br><h3>1. ZAAWANSOWANE DZIAŁANIA PROJEKTU</h3>
+<h5>ŁĄCZENIE SEKWENCJI</h5>
+Możliwe jest zaimportowanie pełnej zawartości innej sekwencji do sekwencji aktualnie edytowanej.<br>
+
+Wybierz Projekt-> Importuj kolejną sekwencję do tego sekw.<br>
+Wybierz Importuj akcję.<br>
+Append Sequence dodaje importowaną sekwencję na końcu aktualnej Sekwencji
+Wstaw Sekwencję w pozycji głowicy tworzy cięcie w pozycji głowicy i wstawia zaimportowane sekwencje w tej pozycji<br>
+Wybierz sekwencję do importu<br>
+Zauważ, że musisz mieć co najmniej dwie sekwencje do wykonania jakichkolwiek akcji importowania.<br>
+Naciśnij przycisk Importuj , aby wykonać import.<br>
+<h5>IMPORTOWANIE MEDIÓW Z INNEGO PROJEKTU</h5>
+Możesz importować elementy multimedialne z innego projektu.<br>
+
+Wybierz Projekt-> Importuj media z projektu ...<br>
+Wybierz plik projektu z systemu plików.<br>
+Elementy multimedialne, które nie są obecne w bieżącym projekcie, zostaną otwarte w bieżącym pojemniku. Zwróć uwagę, że załadowanie projektu trwa kilka sekund, zanim pojawią się nowe elementy multimedialne.<br>
+<h3>2. KLIPY ZŁOŻONE</h3>
+Związek klip jest pojedynczy zacisk utworzony przez połączenie wielu klipów i kompozytorów do pojedynczego elementu zawierającego media.<br>
+
+W klipach zespolonych Flowblade implementowane są przez utworzenie pliku XML MLT zapisanego w ukrytym folderze. Zauważ, że obecnie nie jest możliwe rozpakowanie klipu złożonego z powrotem do jego komponentów.<br>
+
+Klipy złożone są użyteczne, gdy pewna złożona sekwencja jest wygodniej traktowana jako pojedyncza jednostka.<br>
+
+<h5>TWORZENIE KLIPU ZŁOŻONEGO Z ZAZNACZENIA</h5>
+Wybierz 2 lub więcej sąsiednich klipów z jednej ścieżki.<br>
+Wybierz Project-> Create Compound Clip-> z wybranych klipów
+Podaj nazwę nowego elementu multimedialnego w oknie dialogowym.<br>
+Nowy element multimedialny pojawi się w bieżącym pojemniku.<br>
+<h5>TWORZENIE ZŁOŻONEGO KLIPU Z SEKWENCJI</h5>
+Wybierz Project-> Create Compound Clip-> From Current Sequence
+Podaj nazwę nowego elementu multimedialnego w oknie dialogowym.<br>
+Nowy element multimedialny pojawi się w bieżącym pojemniku.<br>
+<h5>TWORZENIE ZSYNCHRONIZOWANEGO AUDIO KLIPU ZŁOŻONEGO Z DWÓCH ELEMENTÓW MULTIMEDIALNYCH</h5>
+Wybierz 2 elementy multimedialne w panelu Multimedia.<br>
+Spodziewanym przypadkiem jest wybranie 1 klipu wideo i 1 klipu audio .
+Jeśli wybierzesz 2 klipy wideo, to wideo, które jest używane jako wideo, zależy od kolejności wyboru.<br>
+Dźwięk z klipu traktowanego jako wideo jest wyciszony.<br>
+Wybierz Project-> Create Compound Clip-> Audio Sync Merge Clip From 2 Media Items
+Jeśli synchronizacja dźwięku zakończy się powodzeniem, okno dialogowe aplikuje. Podaj nazwę nowego elementu multimedialnego w oknie dialogowym.<br>
+Nowy element multimedialny pojawi się w bieżącym pojemniku.<br>
+Synchronizacja dźwięku wyszukuje najlepsze dopasowanie matematyczne pomiędzy dwoma przebiegami audio, więc synchronizacja audio niezgodna z dźwiękiem da wyniki losowe.
+<h3>3. SYNCHRONIZACJA DŹWIĘKU NA OSI CZASU</h3>
+Możesz utworzyć klip, aby przejść do pozycji na osi czasu, w której jego dźwięk jest zsynchronizowany z dźwiękiem innego klipu na osi czasu.<br>
+
+Umożliwia to uproszczoną edycję wielokamerową na osi czasu.<br>
+
+Otwórz menu kontekstowe prawym przyciskiem myszy na klipie, który chcesz zsynchronizować z innym klipem.<br>
+Wybierz pozycję menu wybierz Plik Audio Sync Dzięki ... . Kursor zmieni się w krzyżyk kierowania.<br>
+Kliknij Clip, z którym chcesz zsynchronizować dźwięk.<br>
+Zostanie otwarte okno dialogowe z informacjami na temat akcji synchronizacji, która ma zostać wykonana w celu zsynchronizowania klipów.<br>
+Naciśnij przycisk Do Audio Sync Move Edit , aby wykonać edycję synchronizacji.<br>
+Zazwyczaj dobrym pomysłem jest wyciszenie jednego ze zsynchronizowanych klipów
+Synchronizacja dźwięku wyszukuje najlepsze dopasowanie matematyczne pomiędzy dwoma przebiegami audio, więc synchronizacja audio niezgodna z dźwiękiem da wyniki losowe.<br>
+<h3>4. POWOLNE / SZYBKIE RUCHY I ODWROTNE KLIPY</h3>
+W Flowblade efekty ruchowe są osiągane przez renderowanie powolnych / szybkich lub odwróconych wersji klipów wideo i umieszczanie ich na osi czasu.<br>
+
+<h5>TWORZENIE KLIPÓW MOTION</h5>
+Kliknij prawym przyciskiem myszy plik multimedialny i wybierz z menu opcję Renderuj wolny / szybki ruch<br>
+Edytuj parametry nowego klipu ruchu<br>
+Ustaw prędkość<br>
+Podaj nazwę i lokalizację klipu ruchu<br>
+Wybierz parametry renderowania klipu Motion. Dobrym pomysłem jest tutaj użycie formatu bezstratnego , aby uniknąć utraty jakości generacyjnej.<br>
+Wybierz zakres renderowania:<br>
+Klip pełnego źródła<br>
+From Source Clip Mark In, aby zaznaczyć<br>
+Kliknij przycisk Renderuj , aby utworzyć nowy klip filmowy<br>
+<h5>TWORZENIE ODWRÓCONYCH KLIPÓW</h5>
+Kliknij prawym przyciskiem myszy plik multimedialny i wybierz polecenie Renderuj plik odwróconego ruchu z menu<br>
+Edytuj parametry nowego klipu ruchu<br>
+Ustaw prędkość<br>
+Podaj nazwę i lokalizację klipu odwrotnego<br>
+Wybierz parametry renderowania dla odwróconego klipu. Dobrym pomysłem jest tutaj użycie formatu bezstratnego , aby uniknąć utraty jakości generacyjnej.<br>
+Wybierz zakres renderowania:<br>
+Klip pełnego źródła<br>
+From Source Clip Mark In, aby zaznaczyć<br>
+Kliknij przycisk Renderuj , aby utworzyć nowy odwrócony klip<br>
+<h3>5. RODZICIELSTWO KLIPÓW</h3>
+W Flowblade Movie Editor można ustawić pozycje klipu, aby śledzić pozycje innego klipu na żądanie.<br>
+
+<h5>GŁÓWNE PUNKTY</h5>
+Relacje synchronizacji konfiguruje się, wybierając opcję Sync Parent Clip do synchronizacji klipu dla dzieci .<br>
+Tylko klipy na ścieżce V1 można synchronizować Klipy rodzica . Odbywa się to w celu zachęcenia do stylu edycji, w którym główna część Sekwencji znajduje się na ścieżce V1, a kompozycje i edycje z podziałem audio są wykonywane względem sekwencji klipów na ścieżce V1.<br>
+Funkcja synchronizacji pomaga zachować wcześniejszą pracę z wielościeżkowymi materiałami kompozytowymi i edycją audio, gdy klipy nie są już we właściwych położeniach względem siebie, z powodu edycji w innym miejscu Sekwencji.<br>
+Resynchronizacja odbywa się tylko na żądanie, aby uniknąć przeskakiwania klipów na linii czasu podczas edycji. Wyraźne resynchronizacje są również lepsze z punktu widzenia unikania efektów ubocznych podczas edycji.<br>
+<h5>USTAWIENIE SYNC PARENT</h5>
+Kliknij prawym przyciskiem myszy na klipie i wybierz opcję Wybierz synchronizację klipa rodzica ... na dowolnym klipie NIE na ścieżce V1.<br>
+Kursor zamienia się w Krzyż Docelowy. Kliknij klip na ścieżce V1, aby wybrać go jako Sync Parent Clip.<br>
+Połączenie synchronizacji jest ustanawiane między dwoma klipami. Kursor wraca do domyślnego wskaźnika.<br>
+Synchronizuj aplikacje State Stripe w klipie Sync Child. Synchronizuj paski stanu na klipach:<br>
+Kolor zielony oznacza, że ​​klip jest zsynchronizowany z rodzicem.<br>
+Kolor czerwony oznacza, że ​​klip NIE jest zsynchronizowany z rodzicem.<br>
+Szary oznacza, że ​​Sync Parent Clip nie jest już na ścieżce V1.<br>
+<h5>PONOWNA SYNCHRONIZACJA KLIPÓW PODRZĘDNYCH</h5>
+Wybierz Edycja -> Ponownie zsynchronizuj wszystko, aby ponownie zsynchronizować z menu aplikacji wszystkie Synchronizuj klipy potomne.<br>
+Wybierz Edycja -> Ponownie zsynchronizuj zaznaczone, aby ponownie zsynchronizować z wybranego menu aplikacji Synchronizuj klipy potomne.<br>
+Kliknij prawym przyciskiem myszy na Sync Child klipsem i wybierz Resync z menu popoup aby zsynchronizować jeden klip.<br>
+Naciśnij Resync Selected Bbtton, aby ponownie zsynchronizować wybraną Synchronizację klipów podrzędnych.<br>
+<h5>CZYSZCZENIE SYNCHRONIZACJI RELACJI MIĘDZY RODZICAMI</h5>
+Kliknij prawym przyciskiem myszy Synchronizuj klip podrzędny i wybierz Wyczyść powiązanie synchronizacji.
+<h5>SYNCHRONIZOWANIE ZŁOŻONYCH KLIPÓW</h5>
+W razie potrzeby ustaw wszystkie klipy wchodzące w skład kompozycji wielościeżkowej zsynchronizowane z tym samym klipem.
+<h5>AUDIO SPLIT SYNCING</h5>
+Kliknij prawym przyciskiem myszy na klipie na ścieżce V1 i wybierz Split Audio Synched.<br>
+Edytuj dzielenie dźwięku za pomocą trybu z dwiema rolkami, aby zachować synchronizację z klipem nadrzędnym.<br>
+W razie potrzeby ponownie zsynchronizuj dźwięk.<br>
+      </div>
+    </div>
+        <div class="footer">
+  <p>Flowblade</p>
+</div>
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    
+  </body>
+</html>

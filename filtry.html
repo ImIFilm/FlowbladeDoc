@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="wprowadzenie.html">Wprowadzenie</a>
+      <a href="podstawy.html">Podstawy</a>
+      <a href="narzedzia.html">Narzędzia</a>
+      <a href="zlozoneobrazy.html">Złożone obrazy</a>
+      <a href="filtry.html">Filtry</a>
+      <a href="zaawansowane.html">Zaawansowane</a>
+      <a href="zasieg.html">Zasięg</a>
+      <a href="proxy.html">Proxy</a>
+      <a href="inne.html">Inne</a>
+      <a href="rendering.html">Rendering</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    <div class="doc">
+      <h1 class="text-center">FILTRY</h1>
+      <div class="container">
+       <h3>FILTRY</h3> 
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">DODAWANIE FILTRA</button><br>
+  <div id="demo" class="collapse">
+   Kliknij prawym przyciskiem myszy na dowolnym klipie i wybierz na przykład Dodaj filtr -> Rozmycie -> Pixelize z menu podręcznego.<br>
+W zakładce Filtry : dwukrotnie kliknij filtr w aktualnie wyświetlanej grupie filtrów.
+Na karcie Filtry : przeciągnij filtr z aktualnie wyświetlanej grupy filtrów do tabeli Stos filtrów poniżej.<br>
+  </div>
+
+        
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">OTWIERANIE FILTRA</button><br>
+  <div id="demo1" class="collapse">
+   Kliknij prawym przyciskiem myszy na dowolnym klipie i wybierz Otwórz w Edytorze filtrów z menu podręcznego.<br>
+Kliknij dwukrotnie dowolny klip.<br>
+  </div>
+        
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">EDYTOWANIE FILTRÓW</button><br>
+  <div id="demo2" class="collapse">
+Parametry definiujące wyjście są edytowane w zakładce Filtry.
+Klipy wyświetlają ikonę małego filtra w prawym górnym rogu, jeśli dodano do nich filtr.<br>
+Klipy będą wyświetlać ikonę szarego filtru na środku klipu podczas edytowania klipu.
+Filtry, które modyfikują kanał alfa, działają tylko wtedy, gdy klip, do którego są dołączone, jest mieszany z innymi klipami za pomocą Kompozytorów.<br>
+  </div>
+        
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">KLONOWANIE FILTRÓW Z INNYCH KLIPÓW</button><br>
+  <div id="demo3" class="collapse">
+   Kliknij prawym przyciskiem myszy na dowolnym klipie i wybierz Klonuj filtry -> Z następnego klipu lub Filtry klonów -> Z poprzedniego klipu z menu podręcznego.<br>
+  </div>
+        
+  
+        
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo4">USUWANIE FILTRÓW Z KLIPÓW</button><br>
+  <div id="demo4" class="collapse">
+   Wybierz filtr w tabeli Stosy filtrów i kliknij przycisk Usuń powyżej.
+Wybierz filtr w tabeli Stosy filtrów i naciśnij klawisz Delete .
+Wybierz klip lub zakres klipów na osi czasu i wybierz Wyczyść filtry z menu aplikacji.<br>
+  </div>
+
+
+
+
+<br><br>
+
+
+
+
+
+        
+      </div>
+    </div>
+        <div class="footer">
+  <p>Flowblade</p>
+</div>
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    
+  </body>
+</html>

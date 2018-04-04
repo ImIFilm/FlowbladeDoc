@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="topnav" id="myTopnav">
+      <a href="wprowadzenie.html">Wprowadzenie</a>
+      <a href="podstawy.html">Podstawy</a>
+      <a href="narzedzia.html">Narzędzia</a>
+      <a href="zlozoneobrazy.html">Złożone obrazy</a>
+      <a href="filtry.html">Filtry</a>
+      <a href="zaawansowane.html">Zaawansowane</a>
+      <a href="zasieg.html">Zasięg</a>
+      <a href="proxy.html">Proxy</a>
+      <a href="inne.html">Inne</a>
+      <a href="rendering.html">Rendering</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+    <div class="doc">
+      <h1 class="text-center">ZASIĘG</h1>
+      <div class="container">
+<h3>UZASADNIENIE</h3>
+Ta funkcja jest przydatna głównie wtedy, gdy istnieją elementy multimedialne, które zawierają wiele obszarów zainteresowania lub jeśli użytkownik chce zapisać punkty edycji do późniejszego wykorzystania.
+Typowym przykładem użycia tej funkcji będzie:
+
+Użytkownik ma długi klip z wypowiedzi wygłoszonej podczas funkcji społecznej, kongresu, imprezy firmowej itp.
+Użytkownik chce zaznaczyć i nazwać interesujące części mowy
+<h3>TWORZENIE ELEMENTÓW DZIENNIKÓW ZAKRESU</h3>
+<h5>Z CLIP MONITOR</h5>
+Dodaj element multimedialny do klipu monitora
+Ustaw punkty Mark In i Mark Out
+Naciśnij przycisk "Log Current marked Range" - przycisk w lewym dolnym rogu panelu Range Log
+<h5>DRAG'N'DROP Z OSI CZASU</h5>
+Przeciągnij klip z osi czasu na widok listy elementów w panelu rejestrów zakresu
+<h3>DODAWANIE ELEMENTÓW DZIENNIKÓW ZAKRESU NA OŚ CZASU</h3>
+<h5>Z PRZYCISKAMI</h5>
+Naciśnij przycisk "Dołącz wyświetlany ..." w prawym dolnym rogu, aby dołączyć wszystkie elementy jako klipy do aktywnej ścieżki
+Naciśnij przycisk "Wstaw wybrane ..." obok prawego dolnego rogu, aby wstawić wszystkie wybrane elementy na aktywnej ścieżce przy najbliższym wycięciu z aktualnie wyświetlanej pozycji osi czasu
+<h5>PRZECIĄGNIJ I UPUŚĆ NA OŚ CZASU</h5>
+Wybierz element dziennika zakresu i przeciągnij go do żądanej pozycji na osi czasu
+<h5>ZARZĄDZANIE POZYCJAMI DZIENNIKÓW</h5>
+Użyj menu rozwijanego z górnego rzędu, aby wybrać wyświetloną grupę elementów
+Użyj menu rozwijanego z lewego górnego rogu, aby tworzyć, zmieniać nazwy i usuwać elementy Grupy
+      </div>
+    </div>
+        <div class="footer">
+  <p>Flowblade</p>
+</div>
+    
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    
+  </body>
+</html>
